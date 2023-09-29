@@ -1,0 +1,169 @@
+.card-detail-holder {
+    /* background: url(https://miro.medium.com/v2/resize:fit:1200/1*Pier_1TxinF0QdIXekZpVQ.jpeg); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* min-height: 450px; */
+    height: max-content;
+    position: relative;
+    padding-top: 120px;
+    margin-top: -70px;
+    box-shadow: inset 0px -650px 100px rgba(0, 0, 0, 0.4);
+  }
+  
+  .popular-movie-slider {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 35px;
+    padding: 10px 20px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .poster {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  
+  /* .popular-movie-slider .poster {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  } */
+  
+  .popular-movie-slider .popular-movie-slider-content {
+    line-height: 25px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-name {
+    font-size: 1.8em;
+    margin: 0 0 12px;
+  }
+  .popular-movie-slider .popular-movie-slider-content .release {
+    margin: 0 0 12px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .category {
+    display: flex;
+    gap: 30px;
+    text-transform: capitalize;
+    margin: 0 0 12px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .desc {
+    font-size: 0.9em;
+    margin: 0 0 12px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-info {
+    display: flex;
+    gap: 30px;
+    margin: 0 0 12px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-info .fa-circle {
+    color: #79c142;
+    font-size: 0.85em;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-info .fa span {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-btns {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-btns button {
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 100px;
+    font-size: 1em;
+    background: #79c142;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-btns button .fa {
+    font-size: 0.65em;
+    color: #fff;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-btns .read-more {
+    background: none;
+  }
+  
+  .popular-movie-slider
+    .popular-movie-slider-content
+    .movie-btns
+    .read-more:hover {
+    background: #000;
+  }
+  
+  .popular-movie-slider .popular-movie-slider-content .movie-btns button:hover {
+    background: #000;
+  }
+  @media screen and (min-width: 480px) {
+    .popular-movie-slider .poster {
+      width: 50%;
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 620px) {
+    .card-detail-holder {
+      height: max-content;
+      box-shadow: inset 0px -450px 100px rgba(0, 0, 0, 0.3);
+    }
+    .popular-movie-slider {
+      flex-direction: row;
+      padding: 10px 100px;
+    }
+  
+    .popular-movie-slider .poster {
+      width: 60% !important;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 720px) {
+    .card-detail-holder {
+      height: max-content;
+      min-height: 450px;
+      box-shadow: inset 0px -450px 100px rgba(0, 0, 0, 0.3);
+      padding-bottom: 60px;
+    }
+    .popular-movie-slider .poster {
+      width: 300px !important;
+      height: 400px;
+    }
+    .popular-movie-slider-content {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 1480px) {
+    .card-detail-holder {
+      height: 450px;
+      width: auto;
+      box-shadow: inset 0px -450px 100px rgba(0, 0, 0, 0.3);
+    }
+    .popular-movie-slider .poster {
+      width: 20% !important;
+      height: auto;
+    }
+  }
+  
