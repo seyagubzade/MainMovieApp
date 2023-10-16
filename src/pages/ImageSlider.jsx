@@ -58,6 +58,7 @@ const arrowStyle = {
   zIndex: "100",
 };
 
+
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {

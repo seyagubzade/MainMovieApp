@@ -178,27 +178,13 @@ p.sc-desc {
 .appearOnHover p {
   font-size: 15px;
 }
-/* @media screen and (min-width: 500px) {
-  .movie-cards {
-    justify-content: flex-start;
+@media screen and (max-width: 588px) {
+  .slide-caption{
+    width: 70%!important;
+    font-size: 16px!important;
+    left: 48px!important;
   }
-  .card {
-    width: 30%;
-  }
-}
-@media screen and (min-width: 720px) {
-  .movie-cards {
-    justify-content: flex-start;
-  }
-  .card {
-    width: 21%;
+  .sc-desc{
+    font-size: 15px!important;
   }
 }
-@media screen and (min-width: 920px) {
-  .movie-cards {
-    justify-content: flex-start;
-  }
-  .card {
-    width: 15%;
-  }
-} */
