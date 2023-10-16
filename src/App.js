@@ -24,10 +24,6 @@ function App() {
         <Route path="/tv-shows" element={<TvShows />} />
         <Route path="/tv-shows/:id" element={<TvShowsDetail />} />
         <Route path="/search/:keyword" element={<SearchResults />} />
-
-        {/* Must work on Home Section 
-            Similiar Movie or TV Shows list on Card Details Page
-         */}
       </Routes>
       <Footer />
     </div>

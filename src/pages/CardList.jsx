@@ -4,7 +4,6 @@ import Card from "./Card";
 const CardList = (props) => {
   const [data, setData] = useState(null);
   useEffect(() => {
-    // console.log(props.data.results);
     setData(props.data.results);
   }, [props.data]);
   return (
