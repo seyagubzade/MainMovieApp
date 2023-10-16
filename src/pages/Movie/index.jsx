@@ -78,7 +78,6 @@ const Movies = () => {
     // GetUpcomingMovies API
     dispatch(GetUpcomingMovies());
 
-    // console.log("Home>>DATA >>>>>", nowplayingData);
   }, []);
 
   const containerStyles = {

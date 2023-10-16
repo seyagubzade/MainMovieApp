@@ -3,7 +3,6 @@ import "./index.css";
 import { Link } from "react-router-dom";
 
 const CardItem = ({ item }) => {
-//  console.log(item);
   return (
     <Link to={`/home/${item?.id}`}>
       {

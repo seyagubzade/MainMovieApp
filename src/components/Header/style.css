@@ -30,7 +30,7 @@ header{
 }
 .nav-colored { background-color: #0f1622!important; }
 /* .nav-transparent { background-color: ;} */
-.logo{
+.logo a{
     font-size: 1.4rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.9)!important;

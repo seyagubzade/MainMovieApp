@@ -12,7 +12,6 @@ const Header = () => {
     { id: 1, text: "Home", path: "/" },
     { id: 2, text: "Movies", path: "/movies" },
     { id: 3, text: "TV Shows", path: "/tv-shows" },
-    // { id: 4, text: "About", path: "/about" },
   ];
 
   const handleLinkClick = (id) => {
@@ -21,17 +20,18 @@ const Header = () => {
   window.onscroll = () => {
     if (window.scrollY < 200) {
       setAllClasses("nav-transparent");
-      // nav.classList.remove("nav-transparent");
     } else {
       setAllClasses("nav-colored");
-      // nav.classList.remove("nav-colored");
     }
   };
   return (
     <div id="header" className={allClasses}>
       <header>
         <div className="logo">
+          <Link to={`/`}>
           Movie<span>Stream</span>
+
+          </Link>
         </div>
         <nav className="nav-links">
           <ul>
@@ -50,10 +50,6 @@ const Header = () => {
           </ul>
         </nav>
         <div className="search">
-          {/* <input type="text" className="textfield" placeholder="Search..." />
-          <button className="btnSearch">
-            <i className="fa-regular fa-magnifying-glass"></i>
-          </button> */}
            <SearchComponent />
         </div>
 
@@ -72,10 +68,6 @@ const Header = () => {
           </button>
           <div className={` searchToggle${searchOpen ? " showSearch" : ""}`}>
             <div className={` search2`}>
-              {/* <input type="text" className="textfield" placeholder="Search..." />
-              <button className="btnSearch">
-                <i className="fa-regular fa-magnifying-glass"></i>
-              </button> */}
               <SearchComponent />
             </div>
           </div>

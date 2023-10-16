@@ -21,7 +21,6 @@ export const GetTrendingAll = createAsyncThunk(
       const response = await axios(options);
       return response; // Assuming you want to return the data
     } catch (error) {
-      // Handle errors here, e.g., dispatch an error action
       throw error;
     }
   }
@@ -42,7 +41,6 @@ export const GetTrendingMovies = createAsyncThunk(
       const response = await axios(options);
       return response; // Assuming you want to return the data
     } catch (error) {
-      // Handle errors here, e.g., dispatch an error action
       throw error;
     }
   }
@@ -63,7 +61,6 @@ export const GetTrendingTv = createAsyncThunk(
       const response = await axios(options);
       return response; // Assuming you want to return the data
     } catch (error) {
-      // Handle errors here, e.g., dispatch an error action
       throw error;
     }
   }

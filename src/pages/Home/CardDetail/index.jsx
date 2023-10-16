@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import "./CardDetails.css";
 import axios from "axios";
-// import SimiliarMovies from "./SimiliarMovies";
-// import SimiliarShows from "./SimiliarShows";
 
 const CardDetails = () => {
   const { id } = useParams();
   const [finalData, setFinalData] = useState(null);
   const [loading, setLoading] = useState(true);
-  // const [error, setError] = useState(null);
-  // const [bgImg, setBgImg] = useState(null);
-
   const [movieSuccess, setMovieSuccess] = useState(false);
   const [showsSuccess, setShowsSuccess] = useState(false);
 
@@ -43,7 +37,6 @@ const CardDetails = () => {
         setMovieSuccess(true);
         setFinalData(response.data);
         setLoading(false);
-        // setBgImg(finalData.backdrop_path);
       })
       .catch((error) => {
         // setError(error);
@@ -55,10 +48,8 @@ const CardDetails = () => {
         setShowsSuccess(true);
          setFinalData(response.data) 
         setLoading(false);
-        // setBgImg(finalData.backdrop_path);
       })
       .catch((error) => {
-        // setError(error);
         setLoading(false);
       });
   }, []);
@@ -81,17 +72,6 @@ const CardDetails = () => {
   };
 
   return (
-    // <div
-    //   className="card-detail-holder"
-    //   style={
-    //     finalData.adult ? null :
-    //     movieSuccess || showsSuccess
-    //       ? {
-    //           backgroundImage: `url(https://image.tmdb.org/t/p/original/${finalData.backdrop_path})`,
-    //         }
-    //       : null
-    //   }
-    // >
     <div>
       {loading ? (
         <p>Loading...</p>
@@ -224,11 +204,6 @@ const CardDetails = () => {
         </div>
       ) : null}
       
-      {/* {Object.values(finalData).includes("in_production") ? <SimiliarShows id={id}/> : <SimiliarMovies id={id}/>  } */}
-      {/* {movieSuccess ? <SimiliarMovies id={id}/> : null} */}
-      {/* {movieSuccess ? null : showsSuccess ? <SimiliarShows id={id}/> : null} */}
-      {/* {loading ? null : console.log(finalData.status)} */}
-      {/* {loading ? null :  (finalData.status == "Released" || finalData.status == "Post Production") ? <SimiliarMovies id={id}/> : <SimiliarShows id={id}/> } */}
     </div>
   );
 };

@@ -15,7 +15,6 @@ const CardList = (props) => {
         {
           data?.map((item) => {
             return item.poster_path ? <Card props={item} key={item.id} /> : null; /// Returns only the ones with the poster 
-            // return <Card props={item} key={item.id} /> ;
           })
         }
       </div>
